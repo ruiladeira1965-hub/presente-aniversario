@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Presente de Aniversário</title>
+<style>
+body{
+  margin:0;
+  font-family: Georgia, serif;
+  background: linear-gradient(180deg,#f3e7e9,#e3eeff);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:100vh;
+}
+.card{
+  background:#fff;
+  border-radius:22px;
+  padding:30px;
+  max-width:360px;
+  text-align:center;
+  box-shadow:0 15px 40px rgba(0,0,0,0.2);
+}
+h1{
+  font-size:26px;
+}
+p{
+  font-size:20px;
+  line-height:1.5;
+}
+small{
+  color:#666;
+}
+</style>
+</head>
+
+<body>
+<div class="card" onclick="document.getElementById('music').play()">
+  <h1>🎉 O teu presente de aniversário 🎉</h1>
+  <p>
+    💆‍♀️ <strong>Massagem Cleopatra</strong><br>
+    a realizar dia<br>
+    <strong>24/6/2025</strong>
+  </p>
+  <small>Toca no cartão para ouvir a música 🎶</small>
+  <audio id="music">
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_7e8bfb6c7c.mp3?filename=relaxing-meditation-112191.mp3" type="audio/mpeg">
+  </audio>
+</div>
+</body>
+</html>
